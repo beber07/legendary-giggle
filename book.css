@@ -1,0 +1,26 @@
+tr[class="read"] {background-image: linear-gradient(to right, #fe43d3, blue);}
+tr[class="to-read"] { background-image: linear-gradient(to right, #fefef2, #aeae12); }
+tr[class="in-progress"] { background-image: linear-gradient(to right, #d3fefe, #12aeae); }
+tr[class="read"] span[class="status"] { border: 2px solid red; background-image: linear-gradient(to bottom, #fefef2, #aeae12); }
+tr[class="to-read"] span[class="status"] { border: 2px solid red; background-image: linear-gradient(to bottom, #fefef2, #aeae12); }
+tr[class="in-progress"] span[class="status"] { border: 2px solid red; background-image: linear-gradient(to bottom, #fefef2, #aeae12); }
+span[class="status"], span[class^="rate"] { height: 20px; width: 80px; padding: 5px; }
+
+
+span[class^="rate"] > span {
+   margin: auto;
+   border: 2px solid gold;
+   border-radius: 5px;
+   height: 5px;
+   width: 5px;
+   background: gray;
+   }
+
+
+
+span[class~="one"] > span:first-child { background-image: linear-gradient(to bottom, #fff, gold); }
+span[class~="two"] > span:nth-child(1), span[class~="two"] > span:nth-child(2) { background-image: linear-gradient(to bottom, #fff, gold); }
+span[class~="three"] span { background-image: linear-gradient(to bottom, #fff, gold); }
+span { display: inline-block; }
+
+
