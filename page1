@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="java.css"
+    <meta charset="UTF-8" />
+    <title>Technical Documentation Page</title>
+  </head>
+
+  <body>
+    <nav id="navbar">
+    <header><h2>JS Documentation</h2></header>
+    <a class="nav-link" href="#javascript_introduction">JavaScript Introduction</a> 
+    <a class="nav-link" href="#syntax_and_fundamentals">Syntax And Fundamentals</a>
+    <a class="nav-link" href="#dom_manipulation">Dom Manipulation</a>
+    <a class="nav-link" href="#modern_javascript">Modern JavaScript</a>
+    <a class="nav-link" href="#asynchronous_javascript">Asynchronous JavaScript</a>
+  </nav>
+    <main id="main-doc">
+      <section class="main-section" id="javascript_introduction">
+        <header>
+          <h2>JavaScript Introduction</h2>
+        </header>
+        <p>JavaScript is the programming language that brings websites to life. It allows developers to create interactive elements like buttons, forms, animations, and more.
+It runs in the browser, meaning users don’t need to install anything. Just open a webpage, and JavaScript is already working behind the scenes.
+To start using JavaScript, you can include it directly in your HTML using the script tag.
+JavaScript uses console.log to print messages to the browser’s developer console. This is useful for testing and debugging.
+Variables store data. You can declare them using let, const, or var. Let and const are preferred in modern JavaScript.
+JavaScript supports different data types like strings, numbers, booleans, arrays, and objects. You’ll use these to build logic and store information.</p>
+<p>Comments help explain your code. Use double slashes for single-line comments and slash-asterisk for multi-line.
+JavaScript is case-sensitive, so Name and name are treated as different variables. Be careful with spelling and capitalization.
+You can run JavaScript in the browser console or inside an HTML file. Try experimenting with small snippets to see how they work.</p> 
+<ul>
+  <li>Basic script and console output</li>
+
+<code>let name = "George";
+  console.log("Hello, " + name + "!");</code></ul>
+      </section>
+      <section class="main-section" id="syntax_and_fundamentals">
+        <header><h2>Syntax And Fundamentals</h2></header>
+        <p>JavaScript syntax is the set of rules that define how code is written. Understanding the basics helps you write clean and error-free code.
+Strings are text values wrapped in quotes. Numbers are written without quotes. Booleans are either true or false.
+Operators perform actions on values. Use plus, minus, multiply, divide, and modulus for math. Use double equals, triple equals, not equals, and strict not equals for comparisons.
+Conditional statements let your code make decisions. Use if, else if, and else to control what happens.
+</p><p>Loops repeat actions. A for loop runs a set number of times, while a while loop runs until a condition is false.
+Functions group reusable code. Define a function with the function keyword, then call it by name.
+Arrays store multiple values in one variable. You can access items using their index.
+Objects store data in key-value pairs. They’re great for representing structured information.
+JavaScript has built-in error handling. Use try and catch to handle problems gracefully.
+These fundamentals are the building blocks for writing useful and interactive scripts.
+</p>
+<ul>
+  <li>Simple conditional and loop</li>
+
+ <code>for (let i = 1; i <= 3; i++) {
+  if (i % 2 === 0) {
+    console.log(i + " is even");
+  } else {
+    console.log(i + " is odd");
+  }
+}</code></ul>
+      </section>
+      <section class="main-section" id="dom_manipulation">
+        <header><h2>Dom Manipulation</h2></header>
+        <p>The DOM, or Document Object Model, represents your webpage as a tree of elements. JavaScript can interact with these elements to change content and behavior.
+You can select elements using methods like getElementById or querySelector.
+You can change styles dynamically using JavaScript by modifying the style property of an element.
+Event listeners let you respond to user actions like clicks, mouse movements, or key presses.
+You can create new elements and add them to the page using document methods.
+Removing elements is also easy with the remove method.
+</p><p>Forms can be handled with JavaScript to validate input or prevent submission.
+You can toggle classes to change styles or behavior using classList.
+Traversing the DOM means moving between parent, child, and sibling elements.
+DOM manipulation is key to building dynamic, responsive websites that react to user input.
+</p>
+<ul>
+  <li>Change text on button click</li>
+ <code> function changeText() {
+    document.getElementById("message").textContent = "You clicked the button!";
+</code> </ul>
+      </section>
+      <section class="main-section" id="modern_javascript">
+        <header><h2>Modern JavaScript</h2></header>
+        <p>ES6, also known as ECMAScript 2015, introduced modern features that make JavaScript cleaner and more powerful.
+Use let and const instead of var for better scoping and safety.
+Arrow functions are shorter and more readable than traditional function expressions.
+Template literals allow easy string formatting using backticks and placeholders.
+Destructuring lets you unpack values from arrays or objects into separate variables.
+</p><p>Spread syntax helps copy or merge arrays and objects efficiently.
+Default parameters simplify function definitions by providing fallback values.
+For-of loops over arrays, while for-in loops over object keys.
+Promises help handle asynchronous tasks and make code more readable.
+Modules let you split code into reusable files using export and import.
+Modern JavaScript is cleaner, safer, and more expressive, making it easier to build complex applications.</p>
+<ul>
+  <li>Arrow function and template literal</li>
+
+<code>const greet = (name) => {
+  console.log(`Welcome, ${name}!`);
+};
+greet("George");</code> </ul>
+      </section>
+      <section class="main-section" id="asynchronous_javascript">
+        <header><h2>Asynchronous JavaScript</h2></header>
+        <p>JavaScript is single-threaded, but it can handle tasks asynchronously using callbacks, promises, and async-await.
+SetTimeout delays actions by a specified number of milliseconds.
+SetInterval repeats actions at regular intervals until stopped.
+Callbacks are functions passed into other functions to run after a task completes.
+Promises represent future values and help manage asynchronous operations.
+Async and await make asynchronous code easier to read and write.
+</p><p>Use try and catch to handle errors in async code gracefully.
+Fetching data from APIs is a common use case for asynchronous JavaScript.
+You can show loading indicators while waiting for data to improve user experience.
+Async JavaScript helps build smooth, responsive user interfaces that don’t freeze during long tasks.
+Understanding how to manage asynchronous behavior is essential for modern web development.
+</p>
+<ul>
+  <li>Fetch data with async/await</li>
+
+<code>async function getUser() {
+  const response = await fetch("https://jsonplaceholder.typicode.com/users/1");
+  const user = await response.json();
+  console.log(user.name);
+}
+getUser();</code> </ul>
+      </section>
+      </main>
+  </body>
+</html>
